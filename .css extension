@@ -1,0 +1,533 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 15px 0;
+}
+
+.header-top {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.header-social-container {
+    list-style: none;
+}
+
+.header-social-container li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.header-alert-news {
+    font-size: 14px;
+    text-align: center;
+}
+
+.header-top-actions select {
+    margin-left: 10px;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.header-logo img {
+    width: 120px;
+}
+
+.header-search-container {
+    position: relative;
+}
+
+.search-field {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+}
+
+/* Navigation */
+.desktop-navigation-menu {
+    background-color: #333;
+}
+
+.desktop-menu-category-list {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.menu-category {
+    position: relative;
+    margin-right: 15px;
+}
+
+.menu-category a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    z-index: 1;
+}
+
+.menu-category:hover .dropdown-panel {
+    display: block;
+}
+
+.dropdown-panel-list {
+    padding: 10px;
+    list-style: none;
+}
+
+.dropdown-panel-list .menu-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dropdown-panel-list .panel-list-item {
+    margin-bottom: 5px;
+}
+
+/* Mobile Navigation */
+.mobile-bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-bottom-navigation button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+/* Main Content */
+.hero-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.product-listing-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: calc(25% - 20px);
+    margin-bottom: 40px;
+}
+
+.product-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product-actions {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-top {
+    border-bottom: 1px solid #555;
+    padding-bottom: 30px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-social-links {
+    display: flex;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-social-links li {
+    margin-right: 10px;
+}
+
+.footer-social-links a {
+    color: #fff;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-desc {
+    margin-bottom: 20px;
+}
+
+.footer-newsletter-form {
+    display: flex;
+}
+
+.newsletter-email {
+    padding: 10px;
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #555;
+}
+
+.btn-newsletter {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+/* Modal */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.modal-close-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.newsletter-img img {
+    width: 400px;
+    height: 400px;
+}
+
+.newsletter-header {
+    text-align: center;
+}
+
+.newsletter-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter-desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.email-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.btn-newsletter {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Notification Toast */
+.notification-toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+.toast-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.toast-banner img {
+    width: 80px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.toast-detail {
+    margin-left: 10px;
+}
+
+.toast-message {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.toast-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.toast-meta {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Mobile Navigation */
+.mobile-navigation-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-title {
+    font-size: 24px;
+}
+
+.menu-close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.mobile-menu-category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-category:hover {
+    background-color: #f0f0f0;
+}
+
+.accordion-panel {
+    display: none;
+}
+
+.accordion-menu-category a {
+    padding-left: 30px;
+}
+
+.accordion-menu-category a::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.accordion-menu-category.active a::before {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+/* PWA Update Notification */
+.pwa-update-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.pwa-update-notification-btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
