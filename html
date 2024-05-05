@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anon - eCommerce Website</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay" data-overlay></div>
+
+    <div class="modal" data-modal>
+
+        <div class="modal-close-overlay" data-modal-overlay></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+            <div class="newsletter-img">
+                <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+            </div>
+
+            <div class="newsletter">
+
+                <form action="#">
+
+                    <div class="newsletter-header">
+
+                        <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+                        <p class="newsletter-desc">
+                            Subscribe the <b>Anon</b> to get latest products and discount update.
+                        </p>
+
+                    </div>
+
+                    <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="notification-toast" data-toast>
+
+        <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+        <div class="toast-banner">
+            <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+        </div>
+
+        <div class="toast-detail">
+
+            <p class="toast-message">
+                Someone in new just bought
+            </p>
+
+            <p class="toast-title">
+                Rose Gold Earrings
+            </p>
+
+            <p class="toast-meta">
+                <time datetime="PT2M">2 Minutes</time> ago
+            </p>
+
+        </div>
+
+    </div>
+
+    <!--
+    - HEADER
+  -->
+
+    <header>
+
+        <div class="header-top">
+
+            <div class="container">
+
+                <ul class="header-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="header-alert-news">
+                    <p>
+                        <b>Free Shipping</b> This Week Order Over - $55
+                    </p>
+                </div>
+
+                <div class="header-top-actions">
+
+                    <select name="currency">
+
+            <option value="usd">USD $</option>
+            <option value="eur">EUR €</option>
+
+          </select>
+
+                    <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Español</option>
+            <option value="fr">Français</option>
+
+          </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-main">
+
+            <div class="container">
+
+                <a href="#" class="header-logo">
+                    <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+                </a>
+
+                <div class="header-search-container">
+
+                    <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+                    <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+                </div>
+
+                <div class="header-user-actions">
+
+                    <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+                    <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+                    <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <nav class="desktop-navigation-menu">
+
+            <div class="container">
+
+                <ul class="desktop-menu-category-list">
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Home</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Categories</a>
+
+                        <div class="dropdown-panel">
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">Electronics</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Desktop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Laptop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Camera</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Tablet</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Headphone</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250" height="119">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">Men's</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Formal</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Casual</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Sports</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Jacket</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Sunglasses</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">Women's</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Formal</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Casual</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Perfume</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Cosmetics</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Bags</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">Electronics</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Smart Watch</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Smart TV</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Keyboard</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Mouse</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Microphone</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Men's</a>
+
+                        <ul class="dropdown-list">
+
+                            <li class="dropdown-item">
+                                <a href="#">Shirt</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Shorts & Jeans</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Safety Shoes</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Wallet</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Women's</a>
+
+                        <ul class="dropdown-list">
+
+                            <li class="dropdown-item">
+                                <a href="#">Dress & Frock</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Earrings</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Necklace</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Makeup Kit</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Jewelry</a>
+
+                        <ul class="dropdown-list">
+
+                            <li class="dropdown-item">
+                                <a href="#">Earrings</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Couple Rings</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Necklace</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Bracelets</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Perfume</a>
+
+                        <ul class="dropdown-list">
+
+                            <li class="dropdown-item">
+                                <a href="#">Clothes Perfume</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Deodorant</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Flower Fragrance</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Air Freshener</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Blog</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Hot Offers</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="mobile-bottom-navigation">
+
+            <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+            <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+            <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+            <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+            <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+        </div>
+
+        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+            <div class="menu-top">
+                <h2 class="menu-title">Menu</h2>
+
+                <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+            </div>
+
+            <ul class="mobile-menu-category-list">
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Home</a>
+                </li>
+
+                <li class="menu-category">
+
+                    <button class="accordion-menu" data-accordion-menu>
+              <span>Categories</span>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+
+                    <ul class="accordion-panel">
+
+                        <li class="accordion-menu-category">
+                            <a href="#">Electronics</a>
+                        </li>
+
+                        <li class="accordion-menu-category">
+                            <a href="#">Men's</a>
+                        </li>
+
+                        <li class="accordion-menu-category">
+                            <a href="#">Women's</a>
+                        </li>
+
+                        <li class="accordion-menu-category">
+                            <a href="#">Jewelry</a>
+                        </li>
+
+                        <li class="accordion-menu-category">
+                            <a href="#">Perfume</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Men's</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Women's</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Jewelry</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Perfume</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Blog</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Hot Offers</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!--
+    - MAIN CONTENT
+  -->
+
+    <main>
+
+        <section class="hero-section">
+
+            <div class="container">
+
+                <div class="hero-text">
+
+                    <h2 class="hero-title">
+                        Smart Watches For Everyone
+                    </h2>
+
+                    <p class="hero-desc">
+                        Grab yours and experience the smartest features ever.
+                    </p>
+
+                    <button class="hero-btn">
+            Shop Now
+          </button>
+
+                </div>
+
+                <div class="hero-img">
+                    <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/banner.jpg" alt="smart watches banner" width="600" height="600">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="product-listing-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Smart Watches
+                </h2>
+
+                <div class="product-list">
+
+                    <div class="product-item">
+
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/products/smart-watch-1.jpg" alt="smart watch" width="250" height="250">
+                            </a>
+                        </div>
+
+                        <div class="product-detail">
+
+                            <a href="#" class="product-name">
+                                Apple Watch SE
+                            </a>
+
+                            <p class="product-price">
+                                $299
+                            </p>
+
+                            <div class="product-actions">
+
+                                <button class="action-btn">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                                <button class="action-btn">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-item">
+
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/products/smart-watch-2.jpg" alt="smart watch" width="250" height="250">
+                            </a>
+                        </div>
+
+                        <div class="product-detail">
+
+                            <a href="#" class="product-name">
+                                Samsung Galaxy Watch 4
+                            </a>
+
+                            <p class="product-price">
+                                $299
+                            </p>
+
+                            <div class="product-actions">
+
+                                <button class="action-btn">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                                <button class="action-btn">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-item">
+
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/products/smart-watch-3.jpg" alt="smart watch" width="250" height="250">
+                            </a>
+                        </div>
+
+                        <div class="product-detail">
+
+                            <a href="#" class="product-name">
+                                Fossil Gen 6
+                            </a>
+
+                            <p class="product-price">
+                                $299
+                            </p>
+
+                            <div class="product-actions">
+
+                                <button class="action-btn">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                                <button class="action-btn">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-item">
+
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/products/smart-watch-4.jpg" alt="smart watch" width="250" height="250">
+                            </a>
+                        </div>
+
+                        <div class="product-detail">
+
+                            <a href="#" class="product-name">
+                                Huawei Watch GT 3
+                            </a>
+
+                            <p class="product-price">
+                                $299
+                            </p>
+
+                            <div class="product-actions">
+
+                                <button class="action-btn">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                                <button class="action-btn">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="banner-section">
+
+            <div class="container">
+
+                <img src="https://raw.githubusercontent.com/codewithsadee/anon-ecommerce-website/master/assets/images/banner-2.jpg" alt="banner" width="1000" height="100">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--
+    - FOOTER
+  -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-col">
+
+                    <h3 class="footer-title">
+                        About Us
+                    </h3>
+
+                    <p class="footer-desc">
+                        We provide best quality products at affordable price. You can trust us!
+                    </p>
+
+                    <ul class="footer-social-links">
+
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3 class="footer-title">
+                        Links
+                    </h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Categories</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Men's</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Women's</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Jewelry</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Perfume</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Hot Offers</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3 class="footer-title">
+                        Support
+                    </h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Terms of Service</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Refund Policy</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3 class="footer-title">
+                        Newsletter
+                    </h3>
+
+                    <p class="footer-desc">
+                        Subscribe to our newsletter to get the latest updates and offers.
+                    </p>
+
+                    <form action="#" class="footer-newsletter-form">
+
+                        <input type="email" class="newsletter-email" placeholder="Enter your email address" required>
+
+                        <button type="submit" class="btn-newsletter">
+                Subscribe
+              </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="footer-text">
+                    © 2022 Anon eCommerce Website. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
